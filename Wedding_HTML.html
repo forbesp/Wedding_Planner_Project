@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <link href="Wedding_CSS.css" rel="stylesheet" type="text/css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Design your own Wedding Invitation</title>
+
+    <style>
+        body {
+            background-color: rgb(252, 243, 251);
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Choose your Wedding Invitation Style</h1>
+
+    <h2>Click on each button below, fill in your details, and see which style you like.</h2>
+
+    <img src="bubble_background.jpeg" id="bubbleBack" alt="bubble background" style="width:300px;height:200px;">   <img src="leaves_background.jpeg" alt="leaves background" style="width:300px;height:200px;">   <img src="watercolor_background.jpeg" alt="watercolor background" style="width:300px;height:200px;">
+    <br>
+
+    <div id="myInviteBubble">
+    <br>
+    <button type="button" style="background-color: rgb(255, 217, 252)" onclick="functionBubble()">Click to choose a whimsical bubble background.</button>
+    </div>
+
+    <div id="myInviteLeaves">
+    <br>
+    <button type="button" style="background-color:rgb(255, 217, 252)"; onclick="functionLeaves()">Click to choose a natural green leafy background.</button>
+    </div>
+
+    <div id="myInviteWater">
+    <br>
+    <button type="button" style="background-color: rgb(255, 217, 252)" onclick="functionWater()">Click to choose a funky watercolour background.</button>
+    </div>
+    <br><br>
+
+<main>
+
+    <div class="row">
+
+        <div class="column" 
+        
+            style="background-color: rgb(255, 217, 252);">
+        
+            <label>Guest Name 1</label>
+            <input type="text" style="width:100%" id="guestOne" onkeyup="check1">
+            <br><br>
+        
+            <label>Guest Name 2</label>
+            <input type="text" style="width:100%"  id="guestTwo">
+            <br><br>
+       
+            <label>Invite Message</label>
+            <input type="text" style="width:100%"  id="weddingMessage">
+            <br><br>
+
+            <label>Time</label>
+            <input type="text" style="width:100%"  id="time">
+            <br><br>
+
+            <form action="/action_page.php">
+            <label for="date">Wedding Date</label>
+            <input type="date" id="date" name="date" style="width:100%">
+            </form>
+            <br>
+        
+            <label>Wedding Location</label>
+            <input type="text" style="width:100%"  id="location">
+        
+        </div>
+
+        <div class="column">
+
+            checking to see if second column works
+
+        </div>
+
+    </div>
+
+</main>   
+
+<script src="Wedding_JS.js"></script>
+
+</body>
+
+</html>
