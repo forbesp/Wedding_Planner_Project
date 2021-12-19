@@ -1,4 +1,4 @@
-//live typing functions
+//live typing function
 function check1() {
     var x = document.getElementById("guestOne").value;
     document.getElementById("first").innerHTML = x;
@@ -29,17 +29,29 @@ function check6() {
     document.getElementById("sixth").innerHTML = x;
 }
 
-//background image function
+//background image and matching text function
 function changeBGImage(bgImage){
 
     let element = document.getElementById('image');
+
     if(bgImage == 'bubble'){
         element.style.backgroundImage = "url('bubble_background.jpeg')";
+        element.style.color = "rgb(245, 7, 138)";
+        element.style.fontFamily = "Arial";
+        element.style.fontSize = "22px";
     }
+
     if(bgImage == 'leaves'){
         element.style.backgroundImage = "url('leaves_background.jpeg')";
+        element.style.color = "white";
+        element.style.fontFamily = "Verdana";
+        element.style.fontSize = "21px";
     }
     if(bgImage == 'water color'){
         element.style.backgroundImage = "url('watercolor_background.jpeg')";
+        element.style.color = "brown";
+        element.style.fontFamily = "Lucida Sans";
+        element.style.fontWeight = "bold";
+        element.style.fontSize = "22px";
     }
 }

@@ -16,13 +16,13 @@
 
     <h1>Choose your Wedding Invitation Style</h1>
 
-    <h2>Click on the button below, fill in your details, and see which style you like.</h2>
+    <h2>Fill in your details below, click on the images, and see which style you would like for your wedding invitation.</h2>
 
-    <img class="pointer" src="bubble_background.jpeg" id="bubbleBack" alt="bubble background" onclick="changeBGImage('bubble')" style="width:130px;height:100px;">
+    <img class="pointer" src="bubble_background.jpeg" id="bubbleBack" onclick="changeBGImage('bubble')" alt="bubble background" style="width:160px;height:120px;">
 
-    <img class="pointer" src="leaves_background.jpeg" onclick="changeBGImage('leaves')" alt="leaves background" style="width:130px;height:100px;">
+    <img class="pointer" src="leaves_background.jpeg" id="leavesBack" onclick="changeBGImage('leaves')" alt="leaves background" style="width:160px;height:120px;">
 
-    <img class="pointer" src="watercolor_background.jpeg" onclick="changeBGImage('water color')" alt="watercolor background" style="width:130px;height:100px;">
+    <img class="pointer" src="watercolor_background.jpeg" id="waterBack" onclick="changeBGImage('water color')" alt="watercolor background" style="width:160px;height:120px;">
    
     <br><br>
 
@@ -30,9 +30,7 @@
 
     <div class="row">
 
-        <div class="column" 
-        
-            style="background-color: rgb(255, 217, 252);">
+        <div class="column" style="background-color: rgb(255, 217, 252);">
         
             <label>Guest Name 1</label>
             <input type="text" style="width:100%" id="guestOne" oninput="check1()">
@@ -41,7 +39,7 @@
             <label>Guest Name 2</label>
             <input type="text" style="width:100%"  id="guestTwo" oninput="check2()">
             <br><br>
-       
+    
             <label>Invite Message</label>
             <input type="text" style="width:100%"  id="weddingMessage" oninput="check3()">
             <br><br>
@@ -50,41 +48,37 @@
             <input type="text" style="width:100%"  id="time" oninput="check4()">
             <br><br>
 
-            <form action="/action_page.php">
-            <label for="date">Wedding Date</label>
-            <input type="date" id="date" name="date" style="width:100%" oninput="check5()">
-            </form>
-            <br>
-        
+            <label>Date</label>
+            <input type="text" style="width:100%"  id="date" oninput="check5()">
+            <br><br>
+
             <label>Wedding Location</label>
             <input type="text" style="width:100%"  id="location" oninput="check6()">
-        
+            
+            <h4>We hope you have fun choosing your wedding invitation. If you have any queries please call us on 13 LOVE.</h4>
+            
         </div>
 
         <div class="column">
 
             <div class="imageParent">
 
-                <div id="image" class="maintext">
+                <div id="image" class="mainText"> 
                     <br>
-                    <p id="first"></p><p id="second"></p>
-                    <br>
+                    <p id="first"></p>
+                    <p id="second"></p>
                     <p id="third"></p>
-                    <br>
                     <p id="fourth"></p>
                     <p id="fifth"></p>
-                    <br>
                     <p id="sixth"></p>
-                    
                 </div>
-
+                
             </div>
-
 
         </div>
 
     </div>
-
+    
 </main>   
 
 <script src="Wedding_JS.js"></script>
